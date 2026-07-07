@@ -25,7 +25,6 @@ This repository provides the code and data splitting protocols to reproduce the 
 ├── evaluate.py           # Evaluation script for within-corpus and zero-shot cross-lingual tasks
 └── requirements.txt      # Python dependencies
 
-
 ## 🛠️ Requirements
 - Python 3.8+
 - PyTorch >= 1.10.0
