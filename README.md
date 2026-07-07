@@ -37,7 +37,7 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 
-🚀 Reproducibility
+## 🚀 Reproducibility
 To address data leakage concerns and ensure 100% reproducibility, all data augmentations (SpecAugment, time-stretching, pitch-shifting, noise injection) are applied dynamically on-the-fly AFTER the speaker-independent dataset splitting.
 
 Check the data_splits/ directory for the exact .txt files used to partition CREMA-D, EMO-DB, RAVDESS, SAVEE, and TESS.
@@ -47,7 +47,7 @@ python preprocess.py --dataset_dir /path/to/dataset --out_dir /path/to/save/feat
 Training:
 python train.py --config configs/default.yaml --distillation True --teacher_model "hubert-base-ls960"
 
-📊 Results SummaryOur compact student (0.85M parameters) outperforms massive self-supervised models and prior hybrid networks:
+## 📊 Results SummaryOur compact student (0.85M parameters) outperforms massive self-supervised models and prior hybrid networks:
 Dataset,Accuracy (%),Macro F1
 CREMA-D,94.02 ± 0.19,0.94
 EMO-DB,96.32 ± 0.15,0.96
@@ -57,7 +57,7 @@ TESS,99.89 ± 0.05,1.00
 
 Zero-shot Cross-lingual (English → German): 63.44% Weighted Accuracy.
 
-📖 Citation
+## 📖 Citation
 If you find this code or our paper useful for your research, please cite:
 @article{alkhafaji202xlightweight,
   title={Lightweight Swin Transformer with Prosodic Tokens and Huber-Based HuBERT Distillation for Cross-Lingual Speech Emotion Recognition},
